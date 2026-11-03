@@ -64,6 +64,7 @@ EchoLearn/
 ├── .gitignore
 ├── requirements.txt
 └── README.md
+```
 
 ## Installation and Setup
 
