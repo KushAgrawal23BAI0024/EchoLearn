@@ -65,3 +65,66 @@ EchoLearn/
 ├── requirements.txt
 └── README.md
 
+## Installation and Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/KushAgrawal23BAI0024/EchoLearn.git
+cd EchoLearn
+```
+
+### 2. Create a Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+### 3. Activate the Virtual Environment
+
+**Windows (PowerShell):**
+
+```powershell
+.\venv\Scripts\Activate.ps1
+```
+
+### 4. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 5. Configure Environment Variables
+
+Create a `.env` file in the project root using `.env.example` as a reference.
+
+Configure these variables:
+
+- `AI_PROVIDER=groq`
+- `GROQ_API_KEY=your_groq_api_key`
+- `GROQ_MODEL=openai/gpt-oss-20b`
+
+Never upload your actual API key to GitHub.
+
+### 6. Run the Backend
+
+Open a terminal in the project root and run:
+
+```bash
+uvicorn backend.main:app --reload
+```
+
+### 7. Run the Frontend
+
+Open a second terminal, activate the virtual environment, and run:
+
+```bash
+streamlit run frontend/app.py
+```
+
+The application will be accessible locally through the URL displayed by Streamlit.
+
+### Additional Requirements
+
+- FFmpeg is required for audio and video processing.
+- Playwright with its Chromium browser is required for concept graph PDF export.
