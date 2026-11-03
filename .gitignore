@@ -1,0 +1,60 @@
+
+# Python virtual environments
+venv/
+.venv/
+env/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Uploaded and generated content
+uploads/*
+outputs/*
+vector_db/*
+!uploads/.gitkeep
+!outputs/.gitkeep
+
+# Large local demo media
+sample_*.mp3
+sample_*.mp4
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+temp/
+tmp/
+
+# IDE and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Test and coverage output
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local databases and model files
+*.db
+*.sqlite
+*.sqlite3
+*.pt
+*.pth
+*.onnx
+
+# Local environment and editor files
+.streamlit/secrets.toml
+*.code-workspace
+
+# Platform-specific files
+.DS_Store
+desktop.ini

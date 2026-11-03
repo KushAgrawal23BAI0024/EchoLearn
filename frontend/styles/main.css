@@ -1,0 +1,189 @@
+
+/* ---------- GLOBAL ---------- */
+
+#MainMenu{visibility:hidden;}
+footer{visibility:hidden;}
+
+header{
+    visibility:visible;
+    background:transparent;
+}
+
+.stApp{
+    background:
+        radial-gradient(circle at 20% 20%, rgba(124,58,237,.18), transparent 35%),
+        radial-gradient(circle at 80% 10%, rgba(59,130,246,.15), transparent 30%),
+        linear-gradient(135deg,#050816,#081126,#111936);
+    color:white;
+}
+
+/* Sidebar */
+
+[data-testid="stSidebar"]{
+    background:rgba(15,23,42,.92);
+    border-right:1px solid rgba(255,255,255,.06);
+}
+
+/* Hero */
+
+.hero{
+    padding:25px 0 10px;
+}
+
+.hero-title{
+    font-size:3.8rem;
+    font-weight:800;
+    letter-spacing:-1px;
+}
+
+.hero-subtitle{
+    color:#B8C4E2;
+    font-size:1.15rem;
+    margin-top:10px;
+}
+
+/* Floating glow */
+
+
+
+/* ---------- GLASS ---------- */
+
+.glass-card{
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(20px);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:22px;
+    padding:24px;
+    box-shadow:0 10px 40px rgba(0,0,0,.35);
+    margin-bottom:20px;
+}
+
+/* ---------- METRICS ---------- */
+
+.metric-card{
+    background:rgba(255,255,255,.05);
+    border-radius:20px;
+    padding:20px;
+    border:1px solid rgba(255,255,255,.07);
+    text-align:center;
+    transition:.25s;
+}
+
+.metric-card:hover{
+    transform:translateY(-5px);
+}
+
+.metric-title{
+    color:#9FB3D8;
+    font-size:.9rem;
+}
+
+.metric-value{
+    font-size:2rem;
+    font-weight:700;
+}
+
+/* ---------- FEATURE CARDS ---------- */
+
+.feature-card{
+    background:rgba(255,255,255,.04);
+    border-radius:18px;
+    border:1px solid rgba(255,255,255,.06);
+    padding:18px;
+    min-height:120px;
+    transition:.25s;
+    margin-bottom: 20px;
+}
+
+.feature-card:hover{
+    transform:translateY(-4px);
+    border-color:#7C3AED;
+}
+
+/* ---------- TRANSCRIPT ---------- */
+
+.transcript-card{
+    background:#111827;
+    border-left:4px solid #7C3AED;
+    border-radius:14px;
+    padding:16px;
+    margin-bottom:12px;
+}
+
+.timestamp{
+    color:#8AB4F8;
+    font-size:.85rem;
+    font-weight:600;
+}
+
+/* ---------- BUTTON ---------- */
+
+.stButton>button{
+    width:100%;
+    background:linear-gradient(90deg,#7C3AED,#4F46E5);
+    color:white;
+    border:none;
+    border-radius:14px;
+    padding:12px;
+    font-weight:600;
+}
+
+.stButton>button:hover{
+    transform:translateY(-2px);
+}
+
+/* ---------- FILE UPLOAD ---------- */
+
+[data-testid="stFileUploader"] {
+    background: rgba(255, 255, 255, 0.045);
+    border: 1px dashed rgba(139, 131, 255, 0.55);
+    border-radius: 18px;
+    padding: 18px;
+    transition: 0.25s ease;
+}
+
+[data-testid="stFileUploader"]:hover {
+    border-color: #8B83FF;
+    background: rgba(139, 131, 255, 0.08);
+}
+
+[data-testid="stFileUploader"] section {
+    background: transparent;
+    border: none;
+}
+
+/* ---------- FEATURE CARD POLISH ---------- */
+
+.feature-card {
+    min-height: 205px;
+    padding: 24px;
+    margin-bottom: 18px;
+    background: linear-gradient(
+        145deg,
+        rgba(255,255,255,0.065),
+        rgba(255,255,255,0.025)
+    );
+    border: 1px solid rgba(255,255,255,0.09);
+    border-radius: 20px;
+    transition: all 0.25s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(139,131,255,0.7);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+.feature-card h2 {
+    margin-bottom: 18px;
+}
+
+.feature-card h4 {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    color: #B8C4E2;
+    line-height: 1.6;
+}
