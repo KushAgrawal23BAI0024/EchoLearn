@@ -129,3 +129,9 @@ The application will be accessible locally through the URL displayed by Streamli
 
 - FFmpeg is required for audio and video processing.
 - Playwright with its Chromium browser is required for concept graph PDF export.
+
+## Deployment Status
+
+- Source code is publicly available on GitHub.
+- Local setup and execution instructions are provided above.
+- Cloud deployment is currently in progress.
